@@ -14,6 +14,18 @@ public class VideoLinksTest {
         assertFalse(VideoLinks.isStudio("https://markalex012.github.io:444/forma-home-studio/"));
         assertFalse(VideoLinks.isStudio(null));
     }
+    @Test public void backupAcceptsOnlyBoundedBase64UrlData() {
+        String json = "{\"format\":\"forma-studio\",\"version\":1}";
+        String encoded = java.util.Base64.getUrlEncoder().withoutPadding()
+            .encodeToString(json.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+        assertArrayEquals(json.getBytes(java.nio.charset.StandardCharsets.UTF_8),
+            VideoLinks.backup("forma://backup/" + encoded));
+        assertNull(VideoLinks.backup("forma://user@backup/" + encoded));
+        assertNull(VideoLinks.backup("forma://backup/" + encoded + "?redirect=bad"));
+        assertNull(VideoLinks.backup("forma://backup/%2F"));
+        assertNull(VideoLinks.backup("forma://backup/" + "A".repeat(340001)));
+    }
+
     @Test public void permitsOnlyOnePlainVideoIdentifier() {
         assertEquals("v7AYKMP6rOE", VideoLinks.videoId("forma://video/v7AYKMP6rOE"));
         assertNull(VideoLinks.videoId("forma://video/short"));

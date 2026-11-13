@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "checkedAt": null,
+  "workouts": [
+    {
+      "id": "v7AYKMP6rOE",
+      "cat": "yoga",
+      "lang": "en",
+      "min": 24,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Yoga With Adriene",
+      "title": [
+        "Йога с самого начала",
+        "יוגה מהצעד הראשון",
+        "Yoga for complete beginners"
+      ]
+    },
+    {
+      "id": "TJa6bVbosik",
+      "cat": "pilates",
+      "lang": "he",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Yael Israel · יעל ישראל",
+      "title": [
+        "Пилатес на коврике",
+        "פילאטיס מזרן",
+        "Mat Pilates flow"
+      ]
+    },
+    {
+      "id": "X4RKomKW4SI",
+      "cat": "yoga",
+      "lang": "ru",
+      "min": 15,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Nadya’s Point",
+      "title": [
+        "Йога Айенгара для начинающих",
+        "יוגה איינגאר למתחילים",
+        "Beginner Iyengar yoga"
+      ]
+    },
+    {
+      "id": "y2RcYo36boM",
+      "cat": "pilates",
+      "lang": "en",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Move With Nicole",
+      "title": [
+        "Пилатес: экспресс-занятие",
+        "פילאטיס אקספרס",
+        "Express Pilates flow"
+      ]
+    },
+    {
+      "id": "wM9bTLTyPDk",
+      "cat": "stretch",
+      "lang": "ru",
+      "min": 15,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Йога · практика на русском",
+      "title": [
+        "Утренняя йога и растяжка",
+        "יוגה ומתיחות לבוקר",
+        "Morning yoga & full-body stretch"
+      ]
+    },
+    {
+      "id": "6MEFBZ2mFKg",
+      "cat": "dance",
+      "lang": "ru",
+      "min": 20,
+      "level": "moderate",
+      "eq": [],
+      "coach": "Простые движения · Dance-фитнес",
+      "title": [
+        "Танцевальная тренировка дома",
+        "אימון ריקוד בבית",
+        "Feel-good dance at home"
+      ]
+    },
+    {
+      "id": "0zhvUV1bAVQ",
+      "cat": "strength",
+      "lang": "en",
+      "min": 15,
+      "level": "moderate",
+      "eq": [
+        "dumbbells"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Силовая: верхняя часть тела",
+        "אימון כוח לפלג הגוף העליון",
+        "Upper-body dumbbell workout"
+      ]
+    },
+    {
+      "id": "xJE7cZPoYuY",
+      "cat": "cardio",
+      "lang": "he",
+      "min": 15,
+      "level": "beginner",
+      "eq": [],
+      "coach": "Lilach Ospansky · לילך אוספנסקי",
+      "title": [
+        "Фитнес без прыжков",
+        "אימון ביתי ללא קפיצות",
+        "No-jump home fitness"
+      ]
+    },
+    {
+      "id": "R3WDe7byUXo",
+      "cat": "mobility",
+      "lang": "en",
+      "min": 15,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Tom Merrick",
+      "title": [
+        "Мобилити для всего тела",
+        "מוביליטי לכל הגוף",
+        "Full-body mobility routine"
+      ]
+    },
+    {
+      "id": "f3zOrYCwquE",
+      "cat": "warmup",
+      "lang": "en",
+      "min": 5,
+      "level": "beginner",
+      "eq": [],
+      "coach": "MadFit",
+      "title": [
+        "Разминка перед тренировкой",
+        "חימום לפני האימון",
+        "Full-body warm up"
+      ]
+    },
+    {
+      "id": "wo1uEoy9MwU",
+      "cat": "warmup",
+      "lang": "en",
+      "min": 5,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Заминка и мягкая растяжка",
+        "שחרור ומתיחות לסיום",
+        "Full-body stretch & cool down"
+      ]
+    },
+    {
+      "id": "u1zhPBMSMjk",
+      "cat": "yoga",
+      "lang": "he",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Lea Yoga · לאה יוגה",
+      "title": [
+        "Йога для начинающих с Леей",
+        "יוגה למתחילים עם לאה",
+        "Beginner yoga with Lea"
+      ]
+    },
+    {
+      "id": "J9LJWDmAesY",
+      "cat": "pilates",
+      "lang": "ru",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Пилатес · практика на русском",
+      "title": [
+        "Пилатес: спокойное занятие",
+        "פילאטיס בקצב רגוע",
+        "Gentle beginner Pilates"
+      ]
+    },
+    {
+      "id": "tAU0Y_IM_gU",
+      "cat": "strength",
+      "lang": "ru",
+      "min": 15,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Ольга Кутузова",
+      "title": [
+        "Силовая с собственным весом",
+        "אימון כוח במשקל הגוף",
+        "Bodyweight strength session"
+      ]
+    }
+  ],
+  "availability": {}
+}

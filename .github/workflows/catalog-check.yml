@@ -1,0 +1,32 @@
+name: Check workout sources
+on:
+  schedule:
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/check_catalog.py', '.github/workflows/catalog-check.yml']
+permissions:
+  contents: write
+concurrency:
+  group: forma-catalog
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source-state behavior
+        run: python -m unittest discover -s tests -p '*_test.py'
+      - name: Check catalog
+        run: python scripts/check_catalog.py
+      - name: Save checked metadata
+        run: |
+          if git diff --quiet -- catalog.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog.json
+          git commit -m 'Update workout source availability'
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -26,6 +26,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.webkit.WebChromeClient;
+import android.webkit.ValueCallback;
+import java.io.OutputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
@@ -39,6 +42,9 @@ public final class MainActivity extends Activity {
     private final Runnable timeout = () -> showError();
     private boolean failed;
     private String tvScript;
+    private ValueCallback<Uri[]> fileCallback;
+    private byte[] pendingBackup;
+    private boolean externalVideo;
     private final String[] packages = {"com.google.android.youtube.tv", "com.google.android.youtube"};
 
     private String text(String ru, String he, String en) {
@@ -65,13 +71,10 @@ public final class MainActivity extends Activity {
         toolbar.setPadding(dp(18), 0, dp(12), 0);
         toolbar.setBackgroundColor(Color.rgb(37, 52, 45));
         TextView brand = new TextView(this);
-        brand.setText("F O R M A  ·  TV  0.1");
+        brand.setText("F O R M A  ·  STUDIO");
         brand.setTextColor(Color.WHITE);
         brand.setTextSize(15);
         toolbar.addView(brand, new LinearLayout.LayoutParams(0, dp(48), 1));
-        Button test = button(text("Проверить YouTube", "בדיקת YouTube", "Test YouTube"));
-        test.setOnClickListener(v -> openVideo("v7AYKMP6rOE"));
-        toolbar.addView(test);
         Button retry = button(text("Обновить", "רענון", "Reload"));
         retry.setOnClickListener(v -> loadStudio());
         toolbar.addView(retry);
@@ -79,7 +82,6 @@ public final class MainActivity extends Activity {
         frame = new FrameLayout(this);
         root.addView(frame, new LinearLayout.LayoutParams(-1, 0, 1));
         setContentView(root);
-        createWebView();
         progress = new ProgressBar(this);
         FrameLayout.LayoutParams spinner = new FrameLayout.LayoutParams(dp(48), dp(48), Gravity.CENTER);
         frame.addView(progress, spinner);
@@ -105,17 +107,34 @@ public final class MainActivity extends Activity {
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
         settings.setAllowFileAccess(false);
-        settings.setAllowContentAccess(false);
+        settings.setAllowContentAccess(true);
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         settings.setMediaPlaybackRequiresUserGesture(true);
         settings.setCacheMode(WebSettings.LOAD_DEFAULT);
+        web.setWebChromeClient(new WebChromeClient() {
+            @Override public boolean onShowFileChooser(WebView source, ValueCallback<Uri[]> callback, FileChooserParams params) {
+                if (fileCallback != null) fileCallback.onReceiveValue(null);
+                fileCallback = callback;
+                try {
+                    Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT).setType("application/json")
+                        .addCategory(Intent.CATEGORY_OPENABLE);
+                    startActivityForResult(picker, 101);
+                } catch (ActivityNotFoundException error) {
+                    fileCallback.onReceiveValue(null); fileCallback = null;
+                }
+                return true;
+            }
+        });
         web.setWebViewClient(new WebViewClient() {
             @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
                 String target = request.getUrl().toString();
                 if (!request.isForMainFrame()) return true;
                 if (VideoLinks.isStudio(target)) return false;
                 String id = VideoLinks.videoId(target);
-                if (id != null && VideoLinks.isStudio(view.getUrl())) openVideo(id);
+                if (VideoLinks.isStudio(view.getUrl())) {
+                    if (id != null) openVideo(id);
+                    else { byte[] backup = VideoLinks.backup(target); if (backup != null) createBackup(backup); }
+                }
                 return true;
             }
             @Override public void onPageStarted(WebView view, String url, android.graphics.Bitmap icon) {
@@ -172,11 +191,13 @@ public final class MainActivity extends Activity {
         failed = false;
         errorPanel.setVisibility(View.GONE);
         progress.setVisibility(View.VISIBLE);
-        if (web == null) createWebView();
+        if (web == null) {
+            try { createWebView(); } catch (RuntimeException error) { showError(); return; }
+        }
         web.setVisibility(View.VISIBLE);
         handler.removeCallbacks(timeout);
         handler.postDelayed(timeout, 25000);
-        web.loadUrl(VideoLinks.STUDIO + "?android=1&app=0.1.0");
+        web.loadUrl(VideoLinks.STUDIO + "?android=1&app=1.0.0");
     }
 
     private void showError() {
@@ -196,10 +217,11 @@ public final class MainActivity extends Activity {
         for (String packageName : packages) {
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW, uri).setPackage(packageName));
+                externalVideo = true;
                 return;
             } catch (ActivityNotFoundException ignored) { /* Try the next supported player. */ }
         }
-        try { startActivity(new Intent(Intent.ACTION_VIEW, uri)); }
+        try { startActivity(new Intent(Intent.ACTION_VIEW, uri)); externalVideo = true; }
         catch (ActivityNotFoundException e) {
             Toast.makeText(this, text("Установите или включите YouTube на приставке.",
                 "יש להתקין או להפעיל את YouTube במכשיר.",
@@ -209,7 +231,7 @@ public final class MainActivity extends Activity {
 
     @Override public void onBackPressed() {
         if (web != null && !failed) {
-            web.evaluateJavascript("(function(){var d=document.querySelector('dialog[open]');if(d){d.close();return 'dialog';}return 'exit';})()", result -> {
+            web.evaluateJavascript("(function(){if(window.formaBack && window.formaBack())return 'dialog';var d=document.querySelector('dialog[open]');if(d){d.close();return 'dialog';}return 'exit';})()", result -> {
                 if (!"\"dialog\"".equals(result)) confirmExit();
             });
         } else confirmExit();
@@ -222,11 +244,58 @@ public final class MainActivity extends Activity {
     }
 
     @Override protected void onPause() { if (web != null) web.onPause(); super.onPause(); }
-    @Override protected void onResume() { super.onResume(); if (web != null) web.onResume(); }
+    @Override protected void onResume() {
+        super.onResume();
+        if (web != null) {
+            web.onResume();
+            if (externalVideo && VideoLinks.isStudio(web.getUrl())) {
+                externalVideo = false;
+                web.evaluateJavascript("window.dispatchEvent(new Event('forma:resume'))", null);
+            }
+        }
+    }
     @Override protected void onDestroy() {
         handler.removeCallbacksAndMessages(null);
+        if (fileCallback != null) { fileCallback.onReceiveValue(null); fileCallback = null; }
         if (web != null) { frame.removeView(web); web.destroy(); web = null; }
         super.onDestroy();
     }
+    private void createBackup(byte[] data) {
+        try {
+            org.json.JSONObject json = new org.json.JSONObject(new String(data, StandardCharsets.UTF_8));
+            if (!"forma-studio".equals(json.optString("format")) || json.optInt("version") != 1) return;
+            pendingBackup = data;
+            Intent save = new Intent(Intent.ACTION_CREATE_DOCUMENT).setType("application/json")
+                .addCategory(Intent.CATEGORY_OPENABLE).putExtra(Intent.EXTRA_TITLE, "FORMA-backup.json");
+            startActivityForResult(save, 102);
+        } catch (org.json.JSONException | ActivityNotFoundException error) {
+            pendingBackup = null;
+            Toast.makeText(this, text("Не удалось открыть сохранение. Используйте «Копировать текст».",
+                "לא ניתן לפתוח שמירה. השתמשו בהעתקת טקסט.", "Unable to save a file. Use Copy text instead."), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    @Override protected void onActivityResult(int request, int result, Intent data) {
+        super.onActivityResult(request, result, data);
+        if (request == 101 && fileCallback != null) {
+            Uri uri = result == RESULT_OK && data != null ? data.getData() : null;
+            fileCallback.onReceiveValue(uri == null ? null : new Uri[]{uri});
+            fileCallback = null;
+        }
+        if (request == 102 && pendingBackup != null) {
+            byte[] payload = pendingBackup;
+            pendingBackup = null;
+            if (result == RESULT_OK && data != null && data.getData() != null) {
+                try (OutputStream output = getContentResolver().openOutputStream(data.getData(), "wt")) {
+                    if (output == null) throw new java.io.IOException("No destination");
+                    output.write(payload);
+                    Toast.makeText(this, text("Копия сохранена", "הגיבוי נשמר", "Backup saved"), Toast.LENGTH_SHORT).show();
+                } catch (java.io.IOException error) {
+                    Toast.makeText(this, text("Не удалось сохранить файл", "שמירת הקובץ נכשלה", "Unable to save backup"), Toast.LENGTH_LONG).show();
+                }
+            }
+        }
+    }
+
     private int dp(int value) { return Math.round(value * getResources().getDisplayMetrics().density); }
 }

@@ -1,10 +1,10 @@
-name: Build FORMA TV APK
+name: Build FORMA Studio APK
 
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['android/**', '.github/workflows/android-apk.yml']
+    paths: ['android/**', 'studio-core.js', 'studio.js', 'tests/**', '.github/workflows/android-apk.yml']
 
 permissions:
   contents: write
@@ -32,22 +32,30 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.11.1'
+      - uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: forma-studio-personal-signing-v1
+      - name: Test studio data and checker
+        run: |
+          node --test tests/*.test.cjs
+          python -m unittest discover -s tests -p '*_test.py'
       - name: Compile, test and lint
-        run: gradle --no-daemon -p android :app:testDebugUnitTest :app:lintDebug :app:assembleDebug
+        run: gradle --no-daemon -p android :app:testReleaseUnitTest :app:lintRelease :app:assembleRelease
       - name: Prepare APK
         run: |
           mkdir -p output
-          cp android/app/build/outputs/apk/debug/app-debug.apk output/FORMA-TV-0.1.0.apk
+          cp android/app/build/outputs/apk/release/app-release.apk output/FORMA-Studio-1.0.0.apk
           cd output
-          sha256sum FORMA-TV-0.1.0.apk > SHA256SUMS.txt
+          sha256sum FORMA-Studio-1.0.0.apk > SHA256SUMS.txt
       - uses: actions/upload-artifact@v4
         with:
-          name: FORMA-TV-0.1.0
+          name: FORMA-Studio-1.0.0
           path: output/*
           retention-days: 30
       - name: Publish installable preview
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          tag="android-preview-${GITHUB_RUN_NUMBER}"
-          gh release create "$tag" output/FORMA-TV-0.1.0.apk output/SHA256SUMS.txt --target "$GITHUB_SHA" --prerelease --title 'FORMA TV 0.1 — Android TV preview' --notes-file android/RELEASE_NOTES.md
+          tag="android-studio-${GITHUB_RUN_NUMBER}"
+          gh release create "$tag" output/FORMA-Studio-1.0.0.apk output/SHA256SUMS.txt --target "$GITHUB_SHA" --title 'FORMA Studio 1.0 — mouse edition' --notes-file android/RELEASE_NOTES.md

@@ -20,6 +20,20 @@ public final class VideoLinks {
         } catch (URISyntaxException e) { return false; }
     }
 
+    public static byte[] backup(String value) {
+        if (value == null || value.length() > 340000) return null;
+        try {
+            URI uri = new URI(value);
+            if (!"forma".equals(uri.getScheme()) || !"backup".equals(uri.getHost())
+                || uri.getUserInfo() != null || uri.getPort() != -1
+                || uri.getQuery() != null || uri.getFragment() != null) return null;
+            String path = uri.getRawPath();
+            if (path == null || !path.matches("/[A-Za-z0-9_-]+")) return null;
+            byte[] bytes = java.util.Base64.getUrlDecoder().decode(path.substring(1));
+            return bytes.length <= 250000 ? bytes : null;
+        } catch (URISyntaxException | IllegalArgumentException error) { return null; }
+    }
+
     public static String videoId(String value) {
         if (value == null) return null;
         try {
