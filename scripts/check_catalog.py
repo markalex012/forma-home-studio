@@ -32,7 +32,7 @@ def probe(video):
             data = json.load(response)
             return video["id"], "available" if data.get("title") else "unknown"
     except urllib.error.HTTPError as error:
-        return video["id"], "missing" if error.code in (401, 404, 410) else "unknown"
+        return video["id"], "missing" if error.code in (404, 410) else "unknown"
     except (urllib.error.URLError, TimeoutError, ValueError, OSError):
         return video["id"], "unknown"
 
