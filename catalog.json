@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "checkedAt": "2026-11-13T17:28:54.362138+00:00",
+  "checkedAt": "2026-11-13T17:45:25.705Z",
   "workouts": [
     {
       "id": "v7AYKMP6rOE",
       "cat": "yoga",
       "lang": "en",
-      "min": 24,
+      "min": 20,
       "level": "beginner",
       "eq": [
         "mat"
@@ -16,7 +16,8 @@
         "Йога с самого начала",
         "יוגה מהצעד הראשון",
         "Yoga for complete beginners"
-      ]
+      ],
+      "originalTitle": "Yoga For Complete Beginners - 20 Minute Home Yoga Workout!"
     },
     {
       "id": "TJa6bVbosik",
@@ -27,12 +28,13 @@
       "eq": [
         "mat"
       ],
-      "coach": "Yael Israel · יעל ישראל",
+      "coach": "Yael Israel",
       "title": [
         "Пилатес на коврике",
         "פילאטיס מזרן",
         "Mat Pilates flow"
-      ]
+      ],
+      "originalTitle": "אימון פילאטיס מזרן – 20 דקות עם יעל ישראל"
     },
     {
       "id": "X4RKomKW4SI",
@@ -43,12 +45,13 @@
       "eq": [
         "mat"
       ],
-      "coach": "Nadya’s Point",
+      "coach": "Runaway Yoga",
       "title": [
         "Йога Айенгара для начинающих",
         "יוגה איינגאר למתחילים",
         "Beginner Iyengar yoga"
-      ]
+      ],
+      "originalTitle": "ЙОГА 15 МИНУТ / Для начинающих / Айенгар"
     },
     {
       "id": "y2RcYo36boM",
@@ -64,7 +67,8 @@
         "Пилатес: экспресс-занятие",
         "פילאטיס אקספרס",
         "Express Pilates flow"
-      ]
+      ],
+      "originalTitle": "20 MIN EXPRESS PILATES WORKOUT || Beginner to Moderate Pilates (No Equipment)"
     },
     {
       "id": "wM9bTLTyPDk",
@@ -75,12 +79,13 @@
       "eq": [
         "mat"
       ],
-      "coach": "Йога · практика на русском",
+      "coach": "Йога с Катрин",
       "title": [
         "Утренняя йога и растяжка",
         "יוגה ומתיחות לבוקר",
         "Morning yoga & full-body stretch"
-      ]
+      ],
+      "originalTitle": "Утренняя йога - растяжка на всё тело (15 минут) | Утренняя йога | Йога для начинающих | Для растяжки"
     },
     {
       "id": "6MEFBZ2mFKg",
@@ -110,7 +115,8 @@
         "Силовая: верхняя часть тела",
         "אימון כוח לפלג הגוף העליון",
         "Upper-body dumbbell workout"
-      ]
+      ],
+      "originalTitle": "Full UPPER BODY Workout (Tone & Sculpt) - 15 min At Home"
     },
     {
       "id": "xJE7cZPoYuY",
@@ -119,12 +125,13 @@
       "min": 15,
       "level": "beginner",
       "eq": [],
-      "coach": "Lilach Ospansky · לילך אוספנסקי",
+      "coach": "לילך אוספנסקי",
       "title": [
         "Фитнес без прыжков",
         "אימון ביתי ללא קפיצות",
         "No-jump home fitness"
-      ]
+      ],
+      "originalTitle": "אימון כושר ביתי למתחילות | 15 דקות לכל הגוף ללא ציוד וללא קפיצות"
     },
     {
       "id": "R3WDe7byUXo",
@@ -140,7 +147,8 @@
         "Мобилити для всего тела",
         "מוביליטי לכל הגוף",
         "Full-body mobility routine"
-      ]
+      ],
+      "originalTitle": "15 Minute Full Body Mobility Routine (FOLLOW ALONG)"
     },
     {
       "id": "f3zOrYCwquE",
@@ -154,7 +162,8 @@
         "Разминка перед тренировкой",
         "חימום לפני האימון",
         "Full-body warm up"
-      ]
+      ],
+      "originalTitle": "5 MIN WARM UP FOR AT HOME WORKOUTS (Full Body)"
     },
     {
       "id": "wo1uEoy9MwU",
@@ -170,7 +179,8 @@
         "Заминка и мягкая растяжка",
         "שחרור ומתיחות לסיום",
         "Full-body stretch & cool down"
-      ]
+      ],
+      "originalTitle": "5 MIN FULL BODY STRETCH & COOL DOWN"
     },
     {
       "id": "u1zhPBMSMjk",
@@ -181,12 +191,13 @@
       "eq": [
         "mat"
       ],
-      "coach": "Lea Yoga · לאה יוגה",
+      "coach": "Lea Yoga לאה יוגה",
       "title": [
         "Йога для начинающих с Леей",
         "יוגה למתחילים עם לאה",
         "Beginner yoga with Lea"
-      ]
+      ],
+      "originalTitle": "יוגה למתחילים מאפס: 20 דקות אימון יוגה ביתי!"
     },
     {
       "id": "J9LJWDmAesY",
@@ -197,12 +208,13 @@
       "eq": [
         "mat"
       ],
-      "coach": "Пилатес · практика на русском",
+      "coach": "NaturalFlow by Alena",
       "title": [
         "Пилатес: спокойное занятие",
         "פילאטיס בקצב רגוע",
         "Gentle beginner Pilates"
-      ]
+      ],
+      "originalTitle": "Пилатес для начинающих: около 20 минут для расслабления и восстановления"
     },
     {
       "id": "tAU0Y_IM_gU",
@@ -213,116 +225,1609 @@
       "eq": [
         "mat"
       ],
-      "coach": "Ольга Кутузова",
+      "coach": "Растяжка с Кутузовой",
       "title": [
         "Силовая с собственным весом",
         "אימון כוח במשקל הגוף",
         "Bodyweight strength session"
-      ]
+      ],
+      "originalTitle": "Интенсивная Тренировка на Силу Тела всего за 15 минут! Без оборудования в домашних условиях"
+    },
+    {
+      "id": "AB3Y-4a3ZrU",
+      "cat": "yoga",
+      "lang": "en",
+      "min": 30,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Yoga With Adriene",
+      "title": [
+        "Йога для начинающих: 30 минут",
+        "יוגה למתחילים: 30 דקות",
+        "Beginner yoga: 30 minutes"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "30-Minute Yoga For Beginners | Start Yoga Here..."
+    },
+    {
+      "id": "vNyJuQuuMC8",
+      "cat": "yoga",
+      "lang": "en",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Yoga With Adriene",
+      "title": [
+        "Знакомство с йогой: 20 минут",
+        "היכרות עם יוגה: 20 דקות",
+        "Getting started with yoga"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20-Minute Yoga For Beginners | Start Yoga Here..."
+    },
+    {
+      "id": "XZ9JYvvu-ss",
+      "cat": "yoga",
+      "lang": "ru",
+      "min": 15,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Люба Йога",
+      "title": [
+        "Спокойная йога для расслабления",
+        "יוגה רגועה להרפיה",
+        "Gentle relaxation yoga"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "ЙОГА для расслабления и снятия стресса. Йога практика для начинающих на 15 минут."
+    },
+    {
+      "id": "B9T-fKGB3mo",
+      "cat": "yoga",
+      "lang": "ru",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Люба Йога",
+      "title": [
+        "Утренняя йога: мягкое пробуждение",
+        "יוגה לבוקר: התעוררות עדינה",
+        "Gentle morning yoga"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Как настроить день на успех? | Утренняя ЙОГА для энергии и позитива"
+    },
+    {
+      "id": "MFSvzWRY4mU",
+      "cat": "yoga",
+      "lang": "he",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Lea Yoga לאה יוגה",
+      "title": [
+        "Подвижный йога-флоу с Леей",
+        "יוגה תנועתית עם לאה",
+        "Movement-focused yoga flow"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 דקות אימון תנועתי מחזק ומעורר 🌴 לאה יוגה 🧘🏼‍♀️"
+    },
+    {
+      "id": "nQOn3nsziUo",
+      "cat": "yoga",
+      "lang": "he",
+      "min": 30,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Lea Yoga לאה יוגה",
+      "title": [
+        "Йога-флоу для начинающих",
+        "יוגה זורמת למתחילים",
+        "Beginner yoga flow"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "על קו הזינוק | 30 דקות יוגה | מצוין גם למתחילים!!! | לאה יוגה"
+    },
+    {
+      "id": "7nIRp31w_jA",
+      "cat": "yoga",
+      "lang": "he",
+      "min": 35,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Lea Yoga לאה יוגה",
+      "title": [
+        "Йога: ноги, спина и спокойный темп",
+        "יוגה לרגליים ולגב בקצב רגוע",
+        "Yoga for legs and back"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "35 דקות אימון יוגה לגמישות רגליים, שחרור הגב והשקטת המוח 🧠🌬️🧘🏼"
+    },
+    {
+      "id": "prtQolhFP1E",
+      "cat": "pilates",
+      "lang": "ru",
+      "min": 15,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Мягкий пилатес: всё тело за 15 минут",
+        "פילאטיס עדין לכל הגוף: 15 דקות",
+        "Gentle full-body Pilates: 15 minutes"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "15 МИН ПИЛАТЕС ДОМА | Всё тело | Мягкая тренировка"
+    },
+    {
+      "id": "iVcyPEJLwo4",
+      "cat": "pilates",
+      "lang": "ru",
+      "min": 30,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Плавный пилатес для всего тела",
+        "פילאטיס זורם לכל הגוף",
+        "Flowing full-body Pilates"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Мягкий ПИЛАТЕС на 30 минут | Домашняя тренировка на всё тело"
+    },
+    {
+      "id": "grBvptCaewc",
+      "cat": "pilates",
+      "lang": "ru",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Пилатес без прыжков: медленный темп",
+        "פילאטיס ללא קפיצות בקצב איטי",
+        "Slow-paced Pilates, no jumping"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 МИН ПИЛАТЕС ВСЕ ТЕЛО - тренировка без инвентаря, без прыжков, медленная"
+    },
+    {
+      "id": "6F3xScASTeg",
+      "cat": "pilates",
+      "lang": "he",
+      "min": 10,
+      "level": "moderate",
+      "eq": [
+        "mat",
+        "bands"
+      ],
+      "coach": "Yael Israel",
+      "title": [
+        "Пилатес с эластичной лентой",
+        "פילאטיס עם גומייה",
+        "Resistance-band Pilates"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "שיעור פילאטיס עם גומיה"
+    },
+    {
+      "id": "ja8BdAVplMU",
+      "cat": "pilates",
+      "lang": "he",
+      "min": 45,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Yael Israel",
+      "title": [
+        "Классический пилатес: занятие в студии",
+        "פילאטיס קלאסי: שיעור סטודיו",
+        "Classical Pilates studio session"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "10 תרגילים ראשונים של רפרטואר הפילאטיס - תרגול בשידור חי מ-\"סטודיו יעל ישראל\" - 45 דקות 🧘‍♀️"
+    },
+    {
+      "id": "wtVyZmHnlxM",
+      "cat": "pilates",
+      "lang": "en",
+      "min": 30,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Move With Nicole",
+      "title": [
+        "Пилатес: от простого к среднему",
+        "פילאטיס מרמה קלה לבינונית",
+        "Beginner-to-moderate Pilates"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "30 MIN PILATES WORKOUT || Beginner to Moderate Pilates (No Equipment)"
+    },
+    {
+      "id": "ywzZXO-A7Pg",
+      "cat": "pilates",
+      "lang": "en",
+      "min": 30,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Move With Nicole",
+      "title": [
+        "Пилатес для начинающих: 30 минут",
+        "פילאטיס למתחילים: 30 דקות",
+        "Full-body beginner Pilates"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "30 MIN PILATES FOR BEGINNERS || Full Body Workout (No Equipment)"
+    },
+    {
+      "id": "1vsT-bh97Kk",
+      "cat": "stretch",
+      "lang": "he",
+      "min": 10,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Inballerina",
+      "title": [
+        "Растяжка всего тела: 10 минут",
+        "מתיחות לכל הגוף: 10 דקות",
+        "Full-body stretching: 10 minutes"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "10 דקות של מתיחות לכל הגוף | שגרת מתיחות לגמישות"
+    },
+    {
+      "id": "zbO4xkCzz84",
+      "cat": "stretch",
+      "lang": "he",
+      "min": 10,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "גל - מאמן כושר galhfit",
+      "title": [
+        "Растяжка утром или после тренировки",
+        "מתיחות לבוקר או אחרי אימון",
+        "Morning or post-workout stretches"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "מתיחות לכל הגוף - תרגילי שחרור אחרי אימון / לערב / בוקר (פנו לגוף ולנפש שלכם 10 דקות)"
+    },
+    {
+      "id": "i4qMPu0XksM",
+      "cat": "stretch",
+      "lang": "ru",
+      "min": 35,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Растяжка с Кутузовой",
+      "title": [
+        "Полноценная растяжка: 35 минут",
+        "מתיחות לכל הגוף: 35 דקות",
+        "Full-body stretching: 35 minutes"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "РАСТЯЖКА на ВСЕ ТЕЛО | Самый ПОЛНЫЙ комплекс для улучшения гибкости"
+    },
+    {
+      "id": "H1Kg-y5pxmY",
+      "cat": "stretch",
+      "lang": "ru",
+      "min": 10,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Йога chilelavida Елена Малова",
+      "title": [
+        "Утренняя растяжка всего тела",
+        "מתיחות בוקר לכל הגוף",
+        "Morning full-body stretching"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Растяжка На Все Тело | Утренняя Растяжка за 10 минут | Упражнения на Растяжку | Йога chilelavida"
+    },
+    {
+      "id": "yLDAHd_C7G0",
+      "cat": "stretch",
+      "lang": "en",
+      "min": 10,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Ежедневная растяжка: 10 минут",
+        "מתיחות יומיות: 10 דקות",
+        "Daily full-body stretch"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "10 MIN DAILY STRETCH (full body) - for tight muscles, mobility & flexibility"
+    },
+    {
+      "id": "L_xrDAtykMI",
+      "cat": "stretch",
+      "lang": "en",
+      "min": 15,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Tom Merrick",
+      "title": [
+        "Растяжка для начинающих",
+        "מתיחות למתחילים",
+        "Beginner flexibility routine"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "15 Minute Beginner Stretch Flexibility Routine! (FOLLOW ALONG)"
+    },
+    {
+      "id": "sTANio_2E0Q",
+      "cat": "stretch",
+      "lang": "en",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Спокойная растяжка с элементами йоги",
+        "מתיחות רגועות בהשראת יוגה",
+        "Relaxed yoga-inspired stretch"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 min Full Body STRETCH/YOGA for STRESS & ANXIETY Relief"
+    },
+    {
+      "id": "99ZBq-dZ3nc",
+      "cat": "stretch",
+      "lang": "en",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Растяжка под музыку, без речи",
+        "מתיחות עם מוזיקה, ללא דיבור",
+        "Music-only full-body stretch"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 MIN FULL BODY STRETCH  - No Talking, For Stress Relief & Flexibility/Mobility"
+    },
+    {
+      "id": "5zRHfABYmFE",
+      "cat": "dance",
+      "lang": "ru",
+      "min": 30,
+      "level": "moderate",
+      "eq": [],
+      "coach": "Наталья-Танцевальный фитнес-Москва",
+      "title": [
+        "Зумба: получасовая тренировка",
+        "זומבה: אימון של חצי שעה",
+        "Half-hour Zumba workout"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Танцевальная тренировка ЗУМБА 30 минут💪"
+    },
+    {
+      "id": "ABAnGwr_Y9Y",
+      "cat": "dance",
+      "lang": "ru",
+      "min": 20,
+      "level": "beginner",
+      "eq": [],
+      "coach": "Танцуй и Худей",
+      "title": [
+        "Латино-танцы для начинающих",
+        "ריקוד לטיני למתחילים",
+        "Beginner Latin dance workout"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "СОЖГИ 200 ККАЛ ТАНЦУЯ 🔥 Латина тренировка дома за 20 минут"
+    },
+    {
+      "id": "OVys9s4Q4TY",
+      "cat": "dance",
+      "lang": "en",
+      "min": 20,
+      "level": "moderate",
+      "eq": [],
+      "coach": "MadFit",
+      "title": [
+        "Танцевальная вечеринка: хиты 80-х",
+        "אימון ריקוד: להיטי שנות ה־80",
+        "80s dance party workout"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 MIN 80's DANCE PARTY WORKOUT - Full Body/No Equipment"
+    },
+    {
+      "id": "1vRto-2MMZo",
+      "cat": "dance",
+      "lang": "en",
+      "min": 15,
+      "level": "moderate",
+      "eq": [],
+      "coach": "MadFit",
+      "title": [
+        "Танцевальная вечеринка: хиты 2000-х",
+        "אימון ריקוד: להיטי שנות ה־2000",
+        "2000s dance party workout"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "15 MIN DANCE PARTY WORKOUT - Full Body/No Equipment"
+    },
+    {
+      "id": "C70NlH2Qhlg",
+      "cat": "dance",
+      "lang": "en",
+      "min": 15,
+      "level": "beginner",
+      "eq": [],
+      "coach": "growwithjo",
+      "title": [
+        "Танцевальная тренировка под J.Lo",
+        "אימון ריקוד לצלילי J.Lo",
+        "J.Lo dance party"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "JLo 15 Min Dance Party Workout (Full Body, No Equipment)| growwithjo"
+    },
+    {
+      "id": "bpLMyR9W1PY",
+      "cat": "dance",
+      "lang": "en",
+      "min": 15,
+      "level": "beginner",
+      "eq": [],
+      "coach": "growwithjo",
+      "title": [
+        "Танцевальный фитнес: 15 минут",
+        "אימון ריקוד: 15 דקות",
+        "15-minute dance fitness"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "15 min Fat Burning Dance workout"
+    },
+    {
+      "id": "Xp5XZUy4m1E",
+      "cat": "strength",
+      "lang": "ru",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "dumbbells",
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Силовая с гантелями без прыжков",
+        "אימון כוח עם משקולות ללא קפיצות",
+        "Dumbbell strength, no jumping"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 МИН СИЛА И РЕЛЬЕФ НА ВСЁ ТЕЛО | С ВЕСОМ | Без прыжков"
+    },
+    {
+      "id": "LzxiRDgshfE",
+      "cat": "strength",
+      "lang": "ru",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Всё тело: с гантелями или без",
+        "כל הגוף: עם משקולות או בלעדיהן",
+        "Full body, optional dumbbells"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "С гантелями или БЕЗ: Универсальная тренировка на всё тело (20 мин)"
+    },
+    {
+      "id": "Z4nI_RQYISU",
+      "cat": "strength",
+      "lang": "ru",
+      "min": 30,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Сила без инвентаря: всё тело",
+        "כוח במשקל הגוף: כל הגוף",
+        "Full-body bodyweight strength"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "30 МИН ТРЕНИРОВКА НА ВСЁ ТЕЛО ДОМА | Без прыжков | Без инвентаря | Разминка и заминка"
+    },
+    {
+      "id": "0-auCnPPsss",
+      "cat": "strength",
+      "lang": "ru",
+      "min": 30,
+      "level": "moderate",
+      "eq": [
+        "dumbbells",
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Полная силовая: разминка и заминка",
+        "אימון כוח מלא עם חימום ושחרור",
+        "Full strength session with warm-up and cool-down"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "30 МИН ВСЕ ТЕЛО - полная тренировка, с гантелями/ с весом, с разминкой и заминкой"
+    },
+    {
+      "id": "1ziKXPazhWo",
+      "cat": "strength",
+      "lang": "he",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "dumbbells",
+        "mat"
+      ],
+      "coach": "לילך אוספנסקי",
+      "title": [
+        "Функциональная силовая с гантелями",
+        "אימון כוח פונקציונלי עם משקולות",
+        "Functional dumbbell strength"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "אימון כוח לנשים | פונקציונאלי עם משקולות | 20 דקות | BASE day 1"
+    },
+    {
+      "id": "7OHygN0JHvE",
+      "cat": "strength",
+      "lang": "he",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "dumbbells"
+      ],
+      "coach": "גל - מאמן כושר galhfit",
+      "title": [
+        "Силовая для всего тела: 20 минут",
+        "אימון משקולות לכל הגוף: 20 דקות",
+        "Full-body dumbbell workout"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "אימון כוח עם משקולות - אימון משקולות לכל הגוף 20 דקות (אימון משקולות ביתי לנשים, גברים וגם לילדים)"
+    },
+    {
+      "id": "PqAUNEckukw",
+      "cat": "strength",
+      "lang": "he",
+      "min": 30,
+      "level": "moderate",
+      "eq": [
+        "dumbbells",
+        "mat"
+      ],
+      "coach": "לילך אוספנסקי",
+      "title": [
+        "Верх тела: силовая без повторов",
+        "כוח לפלג הגוף העליון ללא חזרות",
+        "Upper-body strength, no repeats"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "אימון כוח לפלג גוף עליון | 30 דקות עם משקולות בבית (ללא חזרות)"
+    },
+    {
+      "id": "yG3NWOYDVps",
+      "cat": "strength",
+      "lang": "he",
+      "min": 30,
+      "level": "moderate",
+      "eq": [
+        "dumbbells",
+        "mat"
+      ],
+      "coach": "לילך אוספנסקי",
+      "title": [
+        "Силовая без прыжков: 30 минут",
+        "כוח ללא קפיצות: 30 דקות",
+        "No-jump strength: 30 minutes"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "אימון כוח לכל הגוף | 30 דקות עם משקולות בבית (ידידותי לברכיים וללא קפיצות)"
+    },
+    {
+      "id": "H38ach0TmWM",
+      "cat": "strength",
+      "lang": "en",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Силовая с собственным весом: 20 минут",
+        "כוח במשקל הגוף: 20 דקות",
+        "20-minute bodyweight strength"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 Min Full Body Workout (No Equipment)"
+    },
+    {
+      "id": "LqW9gdpctKE",
+      "cat": "strength",
+      "lang": "en",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Первые силовые тренировки",
+        "צעדים ראשונים באימון כוח",
+        "Full-body strength for total beginners"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 min FULL BODY Workout for TOTAL BEGINNERS (Achievable, No Equipment)"
+    },
+    {
+      "id": "Fihj6SW1V3Q",
+      "cat": "strength",
+      "lang": "en",
+      "min": 30,
+      "level": "moderate",
+      "eq": [
+        "dumbbells",
+        "mat"
+      ],
+      "coach": "MadFit",
+      "title": [
+        "Силовая с гантелями: 30 минут",
+        "כוח עם משקולות: 30 דקות",
+        "30-minute full-body dumbbells"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "FULL BODY STRENGTH WITH DUMBBELLS | 30 Minute Workout"
+    },
+    {
+      "id": "3zOKkZG9IPk",
+      "cat": "cardio",
+      "lang": "he",
+      "min": 20,
+      "level": "beginner",
+      "eq": [],
+      "coach": "לילך אוספנסקי",
+      "title": [
+        "Домашнее кардио с вариантом без прыжков",
+        "אירובי ביתי עם אפשרות ללא קפיצות",
+        "Home cardio with no-jump options"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "אימון אירובי כיף בבית: 20 דקות של אנרגיה ומצב רוח טוב (בלי ציוד)✨"
+    },
+    {
+      "id": "6j8P-3PeEHY",
+      "cat": "cardio",
+      "lang": "en",
+      "min": 20,
+      "level": "beginner",
+      "eq": [],
+      "coach": "growwithjo",
+      "title": [
+        "Кардио без прыжков и оборудования",
+        "אירובי ללא קפיצות וללא ציוד",
+        "Low-impact equipment-free cardio"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "LOW IMPACT FULL BODY BURN, ALL FITNESS LEVELS (NO EQUIPMENT, NO JUMPING, NO NOISE)"
+    },
+    {
+      "id": "out05p3_t5k",
+      "cat": "cardio",
+      "lang": "en",
+      "min": 15,
+      "level": "beginner",
+      "eq": [],
+      "coach": "growwithjo",
+      "title": [
+        "Быстрая ходьба дома для начинающих",
+        "הליכה מהירה בבית למתחילים",
+        "Fast walk for beginners"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "15 minute Fast Walk for beginners"
+    },
+    {
+      "id": "E69GDgHQfOU",
+      "cat": "cardio",
+      "lang": "ru",
+      "min": 15,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Лера Логунова",
+      "title": [
+        "Интервальное кардио без прыжков",
+        "אירובי באינטרוולים ללא קפיצות",
+        "No-jump cardio intervals"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "15 МИН ЖИРОСЖИГАЮЩЕЕ КАРДИО | ВИИТ без прыжков"
+    },
+    {
+      "id": "WuQdMF4Ld9s",
+      "cat": "cardio",
+      "lang": "en",
+      "min": 10,
+      "level": "moderate",
+      "eq": [],
+      "coach": "MadFit",
+      "title": [
+        "Короткое кардио без прыжков",
+        "אירובי קצר ללא קפיצות",
+        "Quick no-jump cardio"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "10 MIN Full Body Cardio Workout (No Jumping, No Equipment, No Repeats)"
+    },
+    {
+      "id": "IMurdR_YaWU",
+      "cat": "cardio",
+      "lang": "en",
+      "min": 10,
+      "level": "moderate",
+      "eq": [],
+      "coach": "MadFit",
+      "title": [
+        "Кардио дома: 10 минут без инвентаря",
+        "אירובי בבית: 10 דקות ללא ציוד",
+        "10-minute equipment-free cardio"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "10 MIN CARDIO WORKOUT AT HOME (No Jumping/Apartment Friendly, No Equipment)"
+    },
+    {
+      "id": "dDmAMBcMrKs",
+      "cat": "cardio",
+      "lang": "he",
+      "min": 20,
+      "level": "moderate",
+      "eq": [
+        "mat"
+      ],
+      "coach": "חן גרשון Chen Gershon",
+      "title": [
+        "Интенсивное кардио с прыжками",
+        "אירובי אינטנסיבי עם קפיצות",
+        "Intense cardio with jumping"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "אימון אירובי אינטנסיבי ללא ציוד עם קפיצות ותרגילי סקוואט ולאנג' כולל מתיחות בסוף| 20 דקות | חן גרשון"
+    },
+    {
+      "id": "TmGnKuTy4KQ",
+      "cat": "mobility",
+      "lang": "ru",
+      "min": 15,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "oumvideo",
+      "title": [
+        "Суставная гимнастика: всё тело",
+        "תנועתיות מפרקים לכל הגוף",
+        "Full-body joint mobility"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Суставная гимнастика. Комплекс 15 минут. Антон Клейман"
+    },
+    {
+      "id": "YgXG3HVCClE",
+      "cat": "mobility",
+      "lang": "ru",
+      "min": 15,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Йога где угодно. Влада Исакова",
+      "title": [
+        "Мягкая суставная гимнастика",
+        "תנועתיות מפרקים עדינה",
+        "Gentle joint mobility"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Суставная гимнастика, 15 минут"
+    },
+    {
+      "id": "XTZT56uav84",
+      "cat": "mobility",
+      "lang": "en",
+      "min": 17,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Tom Merrick",
+      "title": [
+        "Подвижность и гибкость для начинающих",
+        "תנועתיות וגמישות למתחילים",
+        "Beginner range-of-motion routine"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "17 Minute Beginner Stretch Routine V6! (FOLLOW ALONG)"
+    },
+    {
+      "id": "SNNKQlkoPqQ",
+      "cat": "mobility",
+      "lang": "en",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Tom Merrick",
+      "title": [
+        "Подвижность всего тела: версия 2",
+        "תנועתיות לכל הגוף: גרסה 2",
+        "Full-body flexibility, version 2"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 Minute Beginner Flexibility Routine V2! (FOLLOW ALONG)"
+    },
+    {
+      "id": "0VrLgzwTmTg",
+      "cat": "mobility",
+      "lang": "en",
+      "min": 10,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Tom Merrick",
+      "title": [
+        "Утренняя мобилити: 10 минут",
+        "מוביליטי לבוקר: 10 דקות",
+        "10-minute morning mobility"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "10 Minute Morning Mobility Routine! (FOLLOW ALONG)"
+    },
+    {
+      "id": "cacwri2wio4",
+      "cat": "mobility",
+      "lang": "en",
+      "min": 5,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Tom Merrick",
+      "title": [
+        "Мобилити: короткое пробуждение",
+        "מוביליטי: התעוררות קצרה",
+        "5-minute morning mobility"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "5 Minute Morning Mobility Routine! (FOLLOW ALONG)"
+    },
+    {
+      "id": "lPKRiU9u_Hc",
+      "cat": "mobility",
+      "lang": "en",
+      "min": 20,
+      "level": "beginner",
+      "eq": [
+        "mat"
+      ],
+      "coach": "Tom Merrick",
+      "title": [
+        "Гибкость и диапазон движений",
+        "גמישות וטווחי תנועה",
+        "Full-body flexibility and range"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "20 Minute Full Body Flexibility Routine! (FOLLOW ALONG)"
+    },
+    {
+      "id": "LyeMlrc-HFY",
+      "cat": "warmup",
+      "lang": "ru",
+      "min": 5,
+      "level": "beginner",
+      "eq": [],
+      "coach": "Masha Blinova",
+      "title": [
+        "Универсальная разминка за 5 минут",
+        "חימום כללי בחמש דקות",
+        "5-minute general warm-up"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Универсальная разминка для всего тела перед любой тренировкой за 5 минут"
+    },
+    {
+      "id": "QL6wYrf-TRg",
+      "cat": "warmup",
+      "lang": "ru",
+      "min": 5,
+      "level": "beginner",
+      "eq": [],
+      "coach": "YAMAGUCHI",
+      "title": [
+        "Разминка перед домашней тренировкой",
+        "חימום לפני אימון ביתי",
+        "Warm-up before a home workout"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Как разогреть мышцы перед тренировкой? Обязательная 5 минутная домашняя разминка"
+    },
+    {
+      "id": "y1sGg1tPpIU",
+      "cat": "warmup",
+      "lang": "ru",
+      "min": 15,
+      "level": "beginner",
+      "eq": [],
+      "coach": "Растяжка с Кутузовой",
+      "title": [
+        "Полная разминка перед тренировкой",
+        "חימום מלא לפני האימון",
+        "Complete pre-workout warm-up"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "Разминка перед растяжкой Разогрев перед тренировкой"
+    },
+    {
+      "id": "uTV-sR7_QgY",
+      "cat": "warmup",
+      "lang": "he",
+      "min": 5,
+      "level": "beginner",
+      "eq": [],
+      "coach": "גל - מאמן כושר galhfit",
+      "title": [
+        "Динамическая разминка всего тела",
+        "חימום דינמי לכל הגוף",
+        "Dynamic full-body warm-up"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "חימום לפני אימון 5 דקות / מתיחות לפני אימון (חימום לכל הגוף)"
+    },
+    {
+      "id": "eNI_oPMB1xI",
+      "cat": "warmup",
+      "lang": "he",
+      "min": 5,
+      "level": "beginner",
+      "eq": [],
+      "coach": "לילך אוספנסקי",
+      "title": [
+        "Мягкая пятиминутная разминка",
+        "חימום עדין של חמש דקות",
+        "Gentle five-minute warm-up"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "חימום לפני אימון - 5 דקות | לאימון כושר ביתי וחדר כושר | תוכנית עשר מעשר"
+    },
+    {
+      "id": "_koyK-obBQY",
+      "cat": "warmup",
+      "lang": "en",
+      "min": 5,
+      "level": "beginner",
+      "eq": [],
+      "coach": "MadFit",
+      "title": [
+        "Разминка для дома или зала",
+        "חימום לבית או לחדר הכושר",
+        "Warm-up for home or gym"
+      ],
+      "addedAt": "2026-11-13",
+      "originalTitle": "5 MIN WARM UP FOR AT HOME OR GYM WORKOUTS"
+    },
+    {
+      "id": "hCUNUsoGIkk",
+      "cat": "dance",
+      "lang": "he",
+      "min": 9,
+      "level": "moderate",
+      "eq": [],
+      "coach": "My studio - סטודיו לנשים אשדוד",
+      "title": [
+        "Зумба дома: короткое занятие",
+        "זומבה בבית: אימון קצר",
+        "Short home Zumba workout"
+      ],
+      "originalTitle": "זומבה אימון כושר מלא במיוחד בבידוד ביתי Zumba"
+    },
+    {
+      "id": "LbTENl86VWk",
+      "cat": "dance",
+      "lang": "en",
+      "min": 10,
+      "level": "moderate",
+      "eq": [],
+      "coach": "MadFit",
+      "title": [
+        "Танцевальный заряд энергии",
+        "אימון ריקוד מלא אנרגיה",
+        "Energy-boost dance party"
+      ],
+      "originalTitle": "10 MIN DANCE PARTY WORKOUT - Full Body Energy Boost!"
     }
   ],
   "availability": {
     "v7AYKMP6rOE": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "TJa6bVbosik": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "X4RKomKW4SI": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "y2RcYo36boM": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "wM9bTLTyPDk": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "6MEFBZ2mFKg": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
-      "failureStreak": 2,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "failureStreak": 3,
       "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
-      "status": "pending",
+      "status": "unavailable",
       "lastResult": "missing"
     },
     "0zhvUV1bAVQ": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "xJE7cZPoYuY": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "R3WDe7byUXo": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "f3zOrYCwquE": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "wo1uEoy9MwU": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "u1zhPBMSMjk": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "J9LJWDmAesY": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     },
     "tAU0Y_IM_gU": {
-      "lastAttempt": "2026-11-13T17:28:54.362138+00:00",
       "status": "available",
       "failureStreak": 0,
-      "lastConfirmed": "2026-11-13T17:28:54.362138+00:00",
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "AB3Y-4a3ZrU": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "vNyJuQuuMC8": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "XZ9JYvvu-ss": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "B9T-fKGB3mo": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "MFSvzWRY4mU": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "nQOn3nsziUo": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "7nIRp31w_jA": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "prtQolhFP1E": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "iVcyPEJLwo4": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "grBvptCaewc": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "6F3xScASTeg": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "ja8BdAVplMU": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "wtVyZmHnlxM": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "ywzZXO-A7Pg": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "1vsT-bh97Kk": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "zbO4xkCzz84": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "i4qMPu0XksM": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "H1Kg-y5pxmY": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "yLDAHd_C7G0": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "L_xrDAtykMI": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "sTANio_2E0Q": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "99ZBq-dZ3nc": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "5zRHfABYmFE": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "ABAnGwr_Y9Y": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "OVys9s4Q4TY": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "1vRto-2MMZo": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "C70NlH2Qhlg": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "bpLMyR9W1PY": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "Xp5XZUy4m1E": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "LzxiRDgshfE": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "Z4nI_RQYISU": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "0-auCnPPsss": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "1ziKXPazhWo": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "7OHygN0JHvE": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "PqAUNEckukw": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "yG3NWOYDVps": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "H38ach0TmWM": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "LqW9gdpctKE": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "Fihj6SW1V3Q": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "3zOKkZG9IPk": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "6j8P-3PeEHY": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "out05p3_t5k": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "E69GDgHQfOU": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "WuQdMF4Ld9s": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "IMurdR_YaWU": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "dDmAMBcMrKs": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "TmGnKuTy4KQ": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "YgXG3HVCClE": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "XTZT56uav84": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "SNNKQlkoPqQ": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "0VrLgzwTmTg": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "cacwri2wio4": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "lPKRiU9u_Hc": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "LyeMlrc-HFY": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "QL6wYrf-TRg": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "y1sGg1tPpIU": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "uTV-sR7_QgY": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "eNI_oPMB1xI": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "_koyK-obBQY": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "hCUNUsoGIkk": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
+      "lastResult": "available"
+    },
+    "LbTENl86VWk": {
+      "status": "available",
+      "failureStreak": 0,
+      "lastAttempt": "2026-11-13T17:45:25.705Z",
+      "lastConfirmed": "2026-11-13T17:45:25.705Z",
       "lastResult": "available"
     }
   },
   "checkSummary": {
-    "available": 13,
+    "available": 74,
     "missing": 1
   }
 }
