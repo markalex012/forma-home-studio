@@ -124,6 +124,7 @@ return '<a class="category" href="#category/'+c+'" data-cat="'+c+'"><img src="'+
 el('categories').onclick=e=>{const link=e.target.closest('[data-cat]');if(!link||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();setRoute('category',link.dataset.cat);};
 el('reset').onclick=()=>{resetFilters();renderCards();};
 const footerNav=document.createElement('nav');footerNav.id='footerNav';footerNav.className='footer-materials';document.querySelector('footer .brand').after(footerNav);
+footerNav.onclick=e=>{const link=e.target.closest('a');if(!link||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();setRoute(link.hash.slice(1));};
 function renderFooter(){footerNav.setAttribute('aria-label',tr('Дополнительные материалы','חומרים נוספים','Additional resources'));footerNav.innerHTML='<strong>'+tr('Дополнительные материалы','חומרים נוספים','Additional resources')+'</strong><div>'+[['equipment',tr('Оборудование','ציוד','Equipment')],['programs',tr('Мои программы','התוכניות שלי','My programs')],['week',tr('План недели','תכנון השבוע','Weekly plan')],['favorites',tr('Избранное','מועדפים','Favorites')],['history',tr('История занятий','היסטוריית אימונים','Session history')],['settings',tr('Настройки и резервная копия','הגדרות וגיבוי','Settings and backup')]].map(([key,label])=>'<a href="#'+key+'">'+label+'</a>').join('')+'</div>';}
 
 document.body.classList.add('mouse-mode');if(new URLSearchParams(location.search).get('android')==='1')document.body.classList.add('app-mode');
