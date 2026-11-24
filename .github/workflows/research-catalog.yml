@@ -1,0 +1,25 @@
+name: Research localized workout catalog
+on:
+  push:
+    branches: [catalog-research]
+    paths: ['scripts/research_catalog.py', '.github/workflows/research-catalog.yml']
+permissions:
+  contents: write
+jobs:
+  research:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check yt-dlp
+      - run: python scripts/research_catalog.py
+      - name: Save metadata for review
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog-candidates.json
+          git commit -m 'Collect public workout metadata for review'
+          git push origin HEAD:catalog-research
