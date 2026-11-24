@@ -43,6 +43,15 @@ function shortWorkoutTitle(w,lang='en',cat=w.cat){
  return text;
 }
 
+function completionSummary(records,videoId,now=Date.now()){
+let count=0,lastCompletedAt=null;
+for(const record of Array.isArray(records)?records:[]){
+if(!record||record.videoId!==videoId||!Number.isFinite(record.time)||record.time<0||record.time>now)continue;
+count++;lastCompletedAt=lastCompletedAt===null?record.time:Math.max(lastCompletedAt,record.time);
+}
+return{count,lastCompletedAt};
+}
+
 function inCategory(w,cat){return !cat||w.cat===cat||(Array.isArray(w.placements)&&w.placements.some(p=>p.cat===cat));}
 function shelfLevel(w,cat){const placement=Array.isArray(w.placements)&&w.placements.find(p=>p.cat===cat);return (placement?placement.level:w.level)==='beginner'?'beginner':'advanced';}
 function catalogShelves(catalog,opts={}){
@@ -62,5 +71,5 @@ function catalogShelves(catalog,opts={}){
  return ['beginner','advanced'].filter(key=>!level||key===(level==='moderate'?'advanced':level)).map(key=>({level:key,workouts:selected.filter(w=>shelfLevel(w,cat)===key).slice(0,limit)}));
 }
 
-return{workoutTraits,shortWorkoutTitle,inCategory,shelfLevel,catalogShelves,videoId,safeName,program,customVideo,readBackup,total,visible,sanitizeSession,categories};
+return{completionSummary,workoutTraits,shortWorkoutTitle,inCategory,shelfLevel,catalogShelves,videoId,safeName,program,customVideo,readBackup,total,visible,sanitizeSession,categories};
 });

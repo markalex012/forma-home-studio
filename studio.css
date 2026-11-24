@@ -89,3 +89,35 @@ body.tv .footer-materials a,body.tv footer .footer-credits,.app-mode .footer-mat
 .quick-count{display:inline-block;margin-inline-start:5px;font-size:.8em;opacity:.85;font-variant-numeric:tabular-nums}
 
 body.tv .card-bottom .add-program,.app-mode .card-bottom .add-program{font-size:16px!important;padding:10px 12px!important}
+
+/* Illustrated equipment guide and personally confirmed completion marks. */
+#equipmentSection.equipment-section{display:block;margin:32px 1% 0;background:transparent;overflow:visible}
+#equipmentSection>.equipment-image{display:none}
+#equipmentSection>.equipment-content{padding:0}
+#equipmentSection #equipmentTitle{font-size:32px}
+#equipmentSection #equipmentText{max-width:780px;font-size:15px}
+#equipmentList{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:28px}
+.equipment-card{background:#fffdf8;border:1px solid var(--line);border-radius:9px;overflow:hidden;display:flex;flex-direction:column}
+.equipment-card figure{margin:0;background:#e9ece2}
+.equipment-card figure img{display:block;width:100%;height:220px;object-fit:cover}
+.equipment-card figcaption{padding:7px 12px;font-size:10px;color:#596451;line-height:1.6}
+.equipment-card figcaption a{text-decoration:underline;text-underline-offset:3px}
+.equipment-card-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.equipment-card h3{font-size:23px;margin:0 0 12px}
+#equipmentSection .equipment-card p{font-size:14px;line-height:1.85;margin:0 0 14px;color:#53604c}
+.equipment-substitute{background:#edf0e7;border-radius:6px;padding:15px;margin:4px 0 14px}
+.equipment-substitute strong{display:block;font-size:13px;margin-bottom:7px}
+#equipmentSection .equipment-substitute p{margin:0}
+#equipmentSection .equipment-tip{font-size:12px;color:#6b715f}
+.equipment-owned{display:flex;align-items:center;gap:11px;margin-top:auto;border-top:1px solid var(--line);padding-top:16px;min-height:52px;font-size:15px;cursor:pointer;font-weight:600}
+.equipment-owned input{width:23px;height:23px;accent-color:var(--green);min-height:23px}
+#equipmentSection #equipmentNote{font-size:12px;line-height:1.8;margin-top:24px}
+.completion-mark{display:flex;flex-direction:column;gap:4px;border-inline-start:3px solid #607c4e;background:#edf3e6;padding:8px 10px;margin:0 0 12px;border-radius:3px;font-size:11px;line-height:1.5}
+.completion-mark strong{color:#354f2b}
+.completion-mark span{color:#5b6652}
+body.tv .completion-mark,.app-mode .completion-mark{font-size:15px}
+body.tv #equipmentSection .equipment-card p,.app-mode #equipmentSection .equipment-card p{font-size:17px}
+body.tv .equipment-card h3,.app-mode .equipment-card h3{font-size:27px}
+body.tv .equipment-owned,.app-mode .equipment-owned{font-size:18px;min-height:58px}
+@media(max-width:1050px){#equipmentList{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){#equipmentList{grid-template-columns:1fr}.equipment-card figure img{height:230px}}

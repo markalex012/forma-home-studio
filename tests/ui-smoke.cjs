@@ -4,11 +4,14 @@ const assert=require('node:assert/strict');
 const {JSDOM,VirtualConsole}=require('jsdom');
 const catalog=JSON.parse(fs.readFileSync('catalog.json','utf8'));
 const errors=[];
+const completedVideo=catalog.curatedShelves['ru/yoga/beginner'][0];
+const confirmedHistory=[{videoId:completedVideo,time:Date.now()-86400000,minutes:10},{videoId:completedVideo,time:Date.now()-172800000,minutes:10}];
 const vc=new VirtualConsole();vc.on('jsdomError',e=>errors.push(e.message));
 const dom=new JSDOM(fs.readFileSync('index.html','utf8'),{
  url:'https://markalex012.github.io/forma-home-studio/',
  runScripts:'dangerously',pretendToBeVisual:true,virtualConsole:vc,
- beforeParse(window){window.scrollTo=()=>{};window.HTMLElement.prototype.scrollIntoView=()=>{};
+ beforeParse(window){window.localStorage.setItem('forma.history',JSON.stringify(confirmedHistory));window.scrollTo=()=>{};
+window.HTMLDialogElement.prototype.showModal=function(){this.open=true;};window.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new window.Event('close'));};window.HTMLElement.prototype.scrollIntoView=()=>{};
  window.fetch=async()=>({ok:true,json:async()=>catalog});}
 });
 const {window}=dom;const doc=window.document;
@@ -65,6 +68,10 @@ async function run(){
     click(doc.querySelector('#reset'));
     assert.equal(doc.querySelectorAll('#cards .workout').length,24);
    }
+   for(const card of doc.querySelectorAll('#cards .workout')){
+    const id=card.querySelector('[data-play]').dataset.play,mark=card.querySelector('.completion-mark');
+    if(id===completedVideo){assert.equal(mark.dataset.completions,'2');assert.ok(mark.querySelector('span').textContent.length>0);}else assert.equal(mark,null);
+   }
    checked++;
   }
   doc.querySelector('#search').value='not-a-real-video-title-12345';
@@ -77,7 +84,25 @@ async function run(){
   await new Promise(resolve=>setTimeout(resolve,0));
   assert.equal(doc.querySelector('#equipmentSection').hidden,false);
   assert.equal(doc.querySelectorAll('#equipmentList input').length,6);
+  assert.equal(doc.querySelectorAll('#equipmentList .equipment-card').length,6);
+  for(const card of doc.querySelectorAll('#equipmentList .equipment-card')){
+   assert.ok(card.querySelector('img').alt.length>0);
+   assert.ok(card.querySelector('.equipment-substitute p').textContent.length>15);
+   assert.ok(card.querySelector('figcaption a').href.startsWith('https://unsplash.com/'));
+  }
+  const band=doc.querySelector('#equipmentList [data-eq="bands"]');
+  band.checked=!band.checked;band.dispatchEvent(new window.Event('change',{bubbles:true}));
+  assert.equal(JSON.parse(window.localStorage.getItem('forma.equipment')).includes('bands'),band.checked);
  }
+ doc.querySelector('#uiLanguage').value='ru';doc.querySelector('#uiLanguage').dispatchEvent(new window.Event('change'));
+ click(doc.querySelector('#nav [data-route="studio"]'));
+ assert.equal(doc.querySelector('#introTitle').textContent,'Выберите занятие по настроению');
+ click(doc.querySelector('#categories [data-cat="yoga"]'));
+ const play=doc.querySelector('#cards [data-play="'+completedVideo+'"]');click(play);
+ assert.equal(JSON.parse(window.localStorage.getItem('forma.history')).length,2,'Opening a video must not count as completing it');
+ click(doc.querySelector('#closePlayer'));click(doc.querySelector('[data-complete]'));
+ assert.equal(JSON.parse(window.localStorage.getItem('forma.history')).length,3);
+ assert.equal(doc.querySelector('#cards [data-play="'+completedVideo+'"]').closest('.workout').querySelector('.completion-mark').dataset.completions,'3');
  assert.deepEqual(errors,[]);
  click(doc.querySelector('#tvMode'));assert.equal(doc.body.classList.contains('tv'),false);
  console.log('DOM smoke checks passed: '+checked+' localized category pages, both 12-card shelves, filters, return home, footer equipment and RTL.');

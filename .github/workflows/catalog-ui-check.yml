@@ -16,5 +16,24 @@ jobs:
           node-version: '22'
       - run: npm install --no-save --package-lock=false jsdom@26.1.0
       - run: node --test tests/*.test.cjs
+      - name: Check equipment photo responses
+        if: github.ref == 'refs/heads/localized-catalog'
+        run: |
+          python - <<'PY'
+          import concurrent.futures, json, re, urllib.request
+          text = open("studio.js", encoding="utf-8").read()
+          data = json.loads(re.search(r"const equipmentGuide=(.*);", text).group(1))
+          def probe(item):
+              key, value = item
+              url = "https://images.unsplash.com/photo-" + value["image"] + "?auto=format&fit=crop&w=800&q=80"
+              request = urllib.request.Request(url, headers={"User-Agent": "LK-Studio-Photo-Check/1.0"})
+              with urllib.request.urlopen(request, timeout=15) as response:
+                  assert response.headers.get_content_type().startswith("image/"), key
+                  assert len(response.read()) > 2000, key
+              return key
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+              for key in pool.map(probe, data.items()):
+                  print(key + ": photo available")
+          PY
       - run: node tests/ui-smoke.cjs
       - run: python -m unittest discover -s tests -p '*_test.py'
