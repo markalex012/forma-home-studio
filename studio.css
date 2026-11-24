@@ -44,3 +44,48 @@ footer{flex-wrap:wrap;align-items:flex-start;gap:24px}
 footer .footer-credits{flex-basis:100%;max-width:none;display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px;margin:0;padding-top:20px;border-top:1px solid var(--line);font-size:12px;line-height:1.9;color:var(--ink)}
 .footer-credits a{text-decoration:underline;text-underline-offset:4px;display:inline-block}
 .footer-credits a[href^="https://wa.me/"]{font-weight:600}
+
+/* Fast selection and readable workout cards. */
+.quick-filters{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:18px 0 4px}
+.quick-label{font-size:12px;color:var(--muted);margin-inline-end:4px}
+.quick-chip{border:1px solid #81917d;background:#fffdf8;border-radius:999px;padding:11px 17px;min-height:46px;font-size:13px;font-weight:600}
+.quick-chip:hover{background:#e5ebdf;border-color:var(--green)}
+.quick-chip.selected{background:var(--green);border-color:var(--green);color:#fff;box-shadow:inset 0 0 0 1px #fff5}
+.workout .card-body{display:flex;flex-direction:column}
+.level-cards .card-body h3{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;line-height:1.5;min-height:4.5em}
+.workout .coach{line-height:1.6}
+.workout-traits{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.workout-trait{background:#e9eee4;color:#334b37;border-radius:4px;padding:4px 7px;font-size:10px;line-height:1.5}
+.workout-details{margin:0 0 14px}
+.workout-details summary{cursor:pointer;min-height:36px;display:list-item;list-style-position:inside;padding:8px 0;font-size:12px;color:var(--green);font-weight:600}
+.workout-details .original-title{font-size:12px;line-height:1.7;margin:5px 0 8px;color:#56604f;overflow-wrap:anywhere}
+.workout:focus-within{outline:3px solid var(--green);outline-offset:3px}
+body.tv main,.app-mode main{max-width:1900px;padding-inline:3%}
+body.tv header,.app-mode header{height:auto;min-height:104px;gap:16px;padding-block:14px;flex-wrap:wrap}
+body.tv header nav,.app-mode header nav{gap:12px;flex-wrap:wrap;height:auto}
+body.tv header nav button,.app-mode header nav button{font-size:17px;min-height:52px;padding:10px 8px}
+body.tv .level-cards .card-body h3,.app-mode .level-cards .card-body h3{font-size:23px;font-weight:600}
+body.tv .level-heading h3,.app-mode .level-heading h3{font-size:30px}
+body.tv .level-cards .card-body,.app-mode .level-cards .card-body{padding:20px}
+body.tv .level-cards .coach,.app-mode .level-cards .coach{font-size:16px}
+body.tv .level-cards .card-kicker,.app-mode .level-cards .card-kicker{font-size:13px}
+body.tv .quick-label,.app-mode .quick-label{font-size:16px}
+body.tv .quick-chip,.app-mode .quick-chip{font-size:17px;min-height:54px;padding:12px 20px}
+body.tv .card-bottom button,.app-mode .card-bottom button{font-size:16px;min-height:52px;padding:10px 12px}
+body.tv .card-bottom small,.app-mode .card-bottom small{font-size:14px;flex-basis:100%}
+body.tv .favorite,.app-mode .favorite{width:52px;height:52px;min-height:52px;font-size:30px}
+body.tv .duration-badge,.app-mode .duration-badge{font-size:15px;padding:7px 10px}
+body.tv .language-badge,.app-mode .language-badge{font-size:12px}
+body.tv .workout-trait,.app-mode .workout-trait{font-size:13px}
+body.tv .workout-details summary,.app-mode .workout-details summary{font-size:16px;min-height:48px}
+body.tv .workout-details .original-title,.app-mode .workout-details .original-title{font-size:16px}
+body.tv .launch:after,.app-mode .launch:after{width:64px;height:64px;font-size:20px;background:#182d20b3}
+body.tv :is(button,a,select,input,summary):focus-visible,.app-mode :is(button,a,select,input,summary):focus-visible{outline:4px solid #a5661b;outline-offset:4px;box-shadow:0 0 0 8px #fff}
+body.tv .category:hover,.app-mode .category:hover,body.tv .workout:hover,.app-mode .workout:hover{box-shadow:0 0 0 4px #536c4d}
+body.tv .footer-materials a,body.tv footer .footer-credits,.app-mode .footer-materials a,.app-mode footer .footer-credits{font-size:16px}
+@media(max-width:760px){body.tv .level-cards .card-body h3,.app-mode .level-cards .card-body h3{font-size:20px}.quick-label{flex-basis:100%}.quick-chip{flex:1 1 auto;text-align:center}.level-cards .card-body h3{min-height:0}}
+
+.quick-chip:disabled{opacity:.45;cursor:default;filter:none}
+.quick-count{display:inline-block;margin-inline-start:5px;font-size:.8em;opacity:.85;font-variant-numeric:tabular-nums}
+
+body.tv .card-bottom .add-program,.app-mode .card-bottom .add-program{font-size:16px!important;padding:10px 12px!important}
