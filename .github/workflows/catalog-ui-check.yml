@@ -1,0 +1,20 @@
+name: Check localized studio pages
+on:
+  push:
+    branches: [main, localized-catalog]
+    paths: ['index.html', 'studio*.js', 'studio.css', 'catalog.json', 'tests/**', '.github/workflows/catalog-ui-check.yml']
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false jsdom@26.1.0
+      - run: node --test tests/*.test.cjs
+      - run: node tests/ui-smoke.cjs
+      - run: python -m unittest discover -s tests -p '*_test.py'
