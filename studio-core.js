@@ -33,7 +33,7 @@ function shortWorkoutTitle(w,lang='en',cat=w.cat){
   .replace(/(?:для\s+похудения|для\s+жиросжигания|\bfor\s+weight\s+loss\b|\bfat[ -]burn(?:ing)?\b|לירידה במשקל)/giu,' ')
   .replace(/\d+\s*%\s*похудение[^.!?]*(?:[.!?]|$)/giu,' ')
   .replace(/^\*+|\*+$/gu,'').replace(/\s+/gu,' ').replace(/^[\s!.,:;–—-]+|[\s!.,:;–—-]+$/gu,'').trim();
- if(!text||text.length<4)text={ru:{yoga:'Йога',pilates:'Пилатес',stretch:'Растяжка',dance:'Танцевальная тренировка',strength:'Силовая тренировка',cardio:'Кардио',mobility:'Мобилити',warmup:'Разминка и заминка'},he:{yoga:'יוגה',pilates:'פילאטיס',stretch:'מתיחות',dance:'אימון ריקוד',strength:'אימון כוח',cardio:'אירובי',mobility:'מוביליטי',warmup:'חימום ושחרור'},en:{yoga:'Yoga',pilates:'Pilates',stretch:'Stretching',dance:'Dance workout',strength:'Strength workout',cardio:'Cardio',mobility:'Mobility',warmup:'Warm up and cool down'}}[lang]?.[cat]||raw;
+ if(!text||text.length<4)text={ru:{yoga:'Йога',pilates:'Пилатес',stretch:'Растяжка',dance:'Танцевальная тренировка',strength:'Силовая тренировка',cardio:'Кардио',mobility:'Мобилити',warmup:'Разминка'},he:{yoga:'יוגה',pilates:'פילאטיס',stretch:'מתיחות',dance:'אימון ריקוד',strength:'אימון כוח',cardio:'אירובי',mobility:'מוביליטי',warmup:'חימום ושחרור'},en:{yoga:'Yoga',pilates:'Pilates',stretch:'Stretching',dance:'Dance workout',strength:'Strength workout',cardio:'Cardio',mobility:'Mobility',warmup:'Warm up and cool down'}}[lang]?.[cat]||raw;
  if(lang!=='he')text=text.replace(/\p{L}{3,}/gu,word=>word===word.toLocaleUpperCase()&&!['HIIT','TRX','ВИИТ','ТБС','ABS'].includes(word)?word[0]+word.slice(1).toLocaleLowerCase():word);
  const letters=text.replace(/[^\p{L}]/gu,'');
  if(lang!=='he'&&letters.length>6&&letters===letters.toLocaleUpperCase()){
