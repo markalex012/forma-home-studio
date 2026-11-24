@@ -1,4 +1,4 @@
-# FORMA Studio
+# LK Studio
 
 Personal mouse-first home workout studio in Russian, Hebrew (RTL), and English.
 
@@ -32,6 +32,6 @@ Personal state is local to each browser/app. No account or cloud sync. Shared av
 Run node --test tests/*.test.cjs and python -m unittest discover -s tests -p '*_test.py'.
 GitHub Actions uses Java 17, Gradle 8.11.1, AGP 8.9.2 and SDK 35, plus native tests and Android lint.
 
-The full app FORMA Studio (org.markalex.forma.studio) is separate from the FORMA TV prototype. Personal test signing is cached; a lost cache may require reinstalling with backup. This is not a Google Play publication.
+The full app LK Studio (org.markalex.forma.studio) is separate from the LK Studio TV prototype. Personal test signing is cached; a lost cache may require reinstalling with backup. This is not a Google Play publication.
 
 No ESP32 integration. Video and imagery belong to creators / Unsplash.

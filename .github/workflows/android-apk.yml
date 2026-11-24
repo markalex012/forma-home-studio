@@ -1,4 +1,4 @@
-name: Build FORMA Studio APK
+name: Build LK Studio APK
 
 on:
   workflow_dispatch:
@@ -45,12 +45,12 @@ jobs:
       - name: Prepare APK
         run: |
           mkdir -p output
-          cp android/app/build/outputs/apk/release/app-release.apk output/FORMA-Studio-1.0.0.apk
+          cp android/app/build/outputs/apk/release/app-release.apk output/LK-Studio-1.0.1.apk
           cd output
-          sha256sum FORMA-Studio-1.0.0.apk > SHA256SUMS.txt
+          sha256sum LK-Studio-1.0.1.apk > SHA256SUMS.txt
       - uses: actions/upload-artifact@v4
         with:
-          name: FORMA-Studio-1.0.0
+          name: LK-Studio-1.0.1
           path: output/*
           retention-days: 30
       - name: Publish installable preview
@@ -58,4 +58,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           tag="android-studio-${GITHUB_RUN_NUMBER}"
-          gh release create "$tag" output/FORMA-Studio-1.0.0.apk output/SHA256SUMS.txt --target "$GITHUB_SHA" --title 'FORMA Studio 1.0 — mouse edition' --notes-file android/RELEASE_NOTES.md
+          gh release create "$tag" output/LK-Studio-1.0.1.apk output/SHA256SUMS.txt --target "$GITHUB_SHA" --title 'LK Studio 1.0.1 — mouse edition' --notes-file android/RELEASE_NOTES.md

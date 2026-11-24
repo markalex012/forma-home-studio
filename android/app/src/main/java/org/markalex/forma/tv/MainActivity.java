@@ -71,7 +71,7 @@ public final class MainActivity extends Activity {
         toolbar.setPadding(dp(18), 0, dp(12), 0);
         toolbar.setBackgroundColor(Color.rgb(37, 52, 45));
         TextView brand = new TextView(this);
-        brand.setText("F O R M A  ·  STUDIO");
+        brand.setText("LK Studio");
         brand.setTextColor(Color.WHITE);
         brand.setTextSize(15);
         toolbar.addView(brand, new LinearLayout.LayoutParams(0, dp(48), 1));
@@ -238,7 +238,7 @@ public final class MainActivity extends Activity {
     }
 
     private void confirmExit() {
-        new AlertDialog.Builder(this).setTitle(text("Выйти из FORMA?", "לצאת מ־FORMA?", "Exit FORMA?"))
+        new AlertDialog.Builder(this).setTitle(text("Выйти из LK Studio?", "לצאת מ־LK Studio?", "Exit LK Studio?"))
             .setNegativeButton(text("Остаться", "להישאר", "Stay"), (dialog, which) -> dialog.dismiss())
             .setPositiveButton(text("Выйти", "יציאה", "Exit"), (dialog, which) -> finish()).show();
     }
@@ -266,7 +266,7 @@ public final class MainActivity extends Activity {
             if (!"forma-studio".equals(json.optString("format")) || json.optInt("version") != 1) return;
             pendingBackup = data;
             Intent save = new Intent(Intent.ACTION_CREATE_DOCUMENT).setType("application/json")
-                .addCategory(Intent.CATEGORY_OPENABLE).putExtra(Intent.EXTRA_TITLE, "FORMA-backup.json");
+                .addCategory(Intent.CATEGORY_OPENABLE).putExtra(Intent.EXTRA_TITLE, "LK Studio-backup.json");
             startActivityForResult(save, 102);
         } catch (org.json.JSONException | ActivityNotFoundException error) {
             pendingBackup = null;

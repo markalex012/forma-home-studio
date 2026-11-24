@@ -5,7 +5,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <uses-feature android:name="android.hardware.faketouch" android:required="false" />
     <application
-        android:label="FORMA Studio"
+        android:label="LK Studio"
         android:icon="@drawable/ic_launcher"
         android:banner="@drawable/tv_banner"
         android:theme="@style/AppTheme"
