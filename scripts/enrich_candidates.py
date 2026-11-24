@@ -17,10 +17,16 @@ def probe(video_id):
 
 data=json.loads(Path("catalog-candidates.json").read_text(encoding="utf-8"))
 ids=list(dict.fromkeys(e["id"] for b in data["buckets"] for e in b["entries"]))
-print("Checking",len(ids),"unique videos",flush=True)
 metadata={}
+for cache in Path(".").glob("research-*.json"):
+ for b in json.loads(cache.read_text(encoding="utf-8"))["buckets"]:
+  for e in b["entries"]:
+   if e.get("available"):
+    metadata[e["id"]]={k:e[k] for k in ["originalName","coach","channelUrl","available"] if k in e}
+pending=[i for i in ids if i not in metadata]
+print("Checking",len(pending),"unique videos",flush=True)
 with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
- for i,(video_id,item) in enumerate(pool.map(probe,ids)):
+ for i,(video_id,item) in enumerate(pool.map(probe,pending)):
   metadata[video_id]=item
   if i%100==0: print("Checked",i,flush=True)
 for lang in ["ru","he","en"]:

@@ -2,7 +2,7 @@ name: Research localized workout catalog
 on:
   push:
     branches: [catalog-research]
-    paths: ['scripts/research_catalog.py', 'scripts/enrich_candidates.py', '.github/workflows/research-catalog.yml']
+    paths: ['scripts/supplement_catalog.py', 'scripts/enrich_candidates.py', '.github/workflows/research-catalog.yml']
 permissions:
   contents: write
 jobs:
@@ -14,11 +14,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/enrich_candidates.py
+      - run: python -m pip install --disable-pip-version-check yt-dlp
+      - run: python scripts/supplement_catalog.py
       - name: Save metadata for review
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add research-*.json
-          git commit -m 'Collect public workout metadata for review'
+          git add research-*.json catalog-candidates.json
+          git commit -m 'Collect and verify additional Hebrew-source workout metadata'
           git push origin HEAD:catalog-research
